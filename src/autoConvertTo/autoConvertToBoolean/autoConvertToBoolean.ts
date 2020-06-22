@@ -1,4 +1,4 @@
-export function CastBoolean (target, property, descriptor?):any {
+export function AutoConvertToBoolean (target, property, descriptor?):any {
   return {
     set: function (value) {
       const isTrue = value.toString() === 'true';
@@ -9,7 +9,7 @@ export function CastBoolean (target, property, descriptor?):any {
       } else if (isFalse) {
         this['__' + property] = false;
       } else {
-        throw new Error('cannot not set value as boolean');
+        throw new Error('cannot set value as boolean');
       }
     },
     get: function () {

@@ -1,6 +1,6 @@
-import { CastBoolean } from './castTo/castToBoolean/castToBoolean';
-import { CastInteger } from './castTo/castToInteger/castToInteger';
-import { CastString } from './castTo/castToString/castToString';
-import { CastToStringifiedJSON } from './castTo/castToStringifiedJSON/castToStringifiedJSON';
+import { AutoConvertToBoolean } from './autoConvertTo/autoConvertToBoolean/autoConvertToBoolean';
+import { AutoConvertToInteger } from './autoConvertTo/autoConvertToInteger/autoConvertToInteger';
+import { AutoConvertoString } from './autoConvertTo/autoConvertToString/autoConvertToString';
+import { AutoConvertToStringifiedJSON } from './autoConvertTo/autoConvertToStringifiedJSON/autoConvertToStringifiedJSON';
 
-export { CastBoolean, CastToStringifiedJSON, CastInteger, CastString };
+export { AutoConvertToBoolean, AutoConvertToStringifiedJSON, AutoConvertToInteger, AutoConvertoString };

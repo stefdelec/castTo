@@ -1,7 +1,8 @@
-import { CastString } from './castToString';
+import { AutoConvertoString } from './autoConvertToString';
+
 describe('string', () => {
   class MyClassString {
-        @CastString
+        @AutoConvertoString
         shouldBeAString: any;
   }
   let theClass;

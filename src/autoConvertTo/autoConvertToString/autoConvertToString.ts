@@ -6,7 +6,7 @@ function transformToString (value) {
   }
 }
 
-export function CastString (target, property, descriptor?):any {
+export function AutoConvertoString (target, property, descriptor?):any {
   return {
     set: function (value) {
       this['__' + property] = transformToString(value);

@@ -1,8 +1,8 @@
-import { CastToStringifiedJSON } from './castToStringifiedJSON';
+import { AutoConvertToStringifiedJSON } from './autoConvertToStringifiedJSON';
 
 describe('string', () => {
   class MyClassStringifiedJSON {
-        @CastToStringifiedJSON
+    @AutoConvertToStringifiedJSON
         shouldBeAString: any;
   }
   let theClass:MyClassStringifiedJSON;

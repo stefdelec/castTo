@@ -1,8 +1,8 @@
-export function CastInteger (target, property, descriptor?:TypedPropertyDescriptor<any>):any {
+export function AutoConvertToInteger (target, property, descriptor?:TypedPropertyDescriptor<any>):any {
   return {
     set: function (value) {
       if (isNaN(value)) {
-        throw new Error('cannot not set value as integer');
+        throw new Error('cannot set value as integer');
       } else {
         this['__' + property] = parseInt(value, 10);
       }

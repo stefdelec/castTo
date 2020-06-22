@@ -1,8 +1,8 @@
-import { CastBoolean } from './castToBoolean';
+import { AutoConvertToBoolean } from './autoConvertToBoolean';
 describe('Boolean', () => {
   test('boolean true string should return boolean', () => {
     class MyClassBoolean {
-      @CastBoolean
+      @AutoConvertToBoolean
       shouldBeABoolean: any;
     }
 
@@ -14,7 +14,7 @@ describe('Boolean', () => {
   });
   test('boolean false string should return boolean', () => {
     class MyClassBoolean {
-      @CastBoolean
+      @AutoConvertToBoolean
       shouldBeABoolean: any;
     }
 
@@ -26,7 +26,7 @@ describe('Boolean', () => {
   });
   test('boolean true should return boolean', () => {
     class MyClassBoolean {
-      @CastBoolean
+      @AutoConvertToBoolean
       shouldBeABoolean: any;
     }
 
@@ -38,7 +38,7 @@ describe('Boolean', () => {
   });
   test('boolean false should return boolean', () => {
     class MyClassBoolean {
-      @CastBoolean
+      @AutoConvertToBoolean
       shouldBeABoolean: any;
     }
 
@@ -50,7 +50,7 @@ describe('Boolean', () => {
   });
   test('not boolean-able should thow', () => {
     class MyClassBoolean {
-      @CastBoolean
+      @AutoConvertToBoolean
       shouldBeABoolean: any;
     }
 

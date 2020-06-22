@@ -1,9 +1,9 @@
-import { CastInteger } from './castToInteger';
+import { AutoConvertToInteger } from './autoConvertToInteger';
 
 describe('INTEGER', () => {
   test('number should return number', () => {
     class MyClassInteger {
-            @CastInteger
+            @AutoConvertToInteger
             shouldBeANInteger: any;
     }
 
@@ -14,7 +14,7 @@ describe('INTEGER', () => {
   });
   test('string should return number', () => {
     class MyClassInteger {
-            @CastInteger
+            @AutoConvertToInteger
             shouldBeANInteger: any;
     }
 
@@ -25,7 +25,7 @@ describe('INTEGER', () => {
   });
   test('unknow type should throw error', () => {
     class MyClassInteger {
-            @CastInteger
+            @AutoConvertToInteger
             shouldBeANInteger: any;
     }
 
